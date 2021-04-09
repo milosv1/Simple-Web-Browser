@@ -37,7 +37,6 @@
             this.clearBookmarksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hashSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeHashToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addHashToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchBar = new System.Windows.Forms.TextBox();
@@ -114,8 +113,7 @@
             // hashSettingsToolStripMenuItem
             // 
             this.hashSettingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.removeHashToolStripMenuItem,
-            this.addHashToolStripMenuItem});
+            this.removeHashToolStripMenuItem});
             this.hashSettingsToolStripMenuItem.Name = "hashSettingsToolStripMenuItem";
             this.hashSettingsToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
             this.hashSettingsToolStripMenuItem.Text = "Hash Settings";
@@ -123,15 +121,9 @@
             // removeHashToolStripMenuItem
             // 
             this.removeHashToolStripMenuItem.Name = "removeHashToolStripMenuItem";
-            this.removeHashToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.removeHashToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.removeHashToolStripMenuItem.Text = "Remove Hash";
             this.removeHashToolStripMenuItem.Click += new System.EventHandler(this.removeHashToolStripMenuItem_Click);
-            // 
-            // addHashToolStripMenuItem
-            // 
-            this.addHashToolStripMenuItem.Name = "addHashToolStripMenuItem";
-            this.addHashToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.addHashToolStripMenuItem.Text = "Add Hash";
             // 
             // clearListToolStripMenuItem
             // 
@@ -239,7 +231,6 @@
         public System.Windows.Forms.ListBox listBoxHistory;
         private System.Windows.Forms.ToolStripMenuItem clearListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addHashToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearBookmarksToolStripMenuItem;
     }
 }

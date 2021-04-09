@@ -53,7 +53,7 @@ namespace SimpleWebBrowser
             {
                 //say Not hashed or HASHED.
                 string isHashed = searchBar.Text.GetHashCode().ToString();
-                isHashed = "(Hashed)";
+                isHashed = "- Hashed";
 
                 webBrowser1.Navigate(searchBar.Text); //search.
                 listBoxHistory.Items.Add(searchBar.Text.GetHashCode() + " " + isHashed + " " + DateTime.Now);
@@ -139,12 +139,8 @@ namespace SimpleWebBrowser
 
             if (addNewBookmarkToolStripMenuItem.Pressed)
             {
-
-                //MessageBox.Show("Added to Bookmarks");
-                //listBoxHistory.Items.Add(searchBar.Text + " " +"(Bookmarked item)"); //right it works - but now how we want..
                 MessageBox.Show(searchBar.Text + " was added to bookmarks!");
                 addNewBookmarkToolStripMenuItem.DropDownItems.Add(searchBar.Text);
-
             }
         }
 
@@ -206,6 +202,7 @@ namespace SimpleWebBrowser
             //Clear items from bookmarks.
             addNewBookmarkToolStripMenuItem.DropDownItems.Clear();
         }
+
     }
 
        
