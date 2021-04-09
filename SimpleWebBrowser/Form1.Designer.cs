@@ -34,8 +34,10 @@
             this.newPageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookmarksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewBookmarkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearBookmarksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hashSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeHashToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addHashToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchBar = new System.Windows.Forms.TextBox();
@@ -46,7 +48,6 @@
             this.listBoxHistory = new System.Windows.Forms.ListBox();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.addHashToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -90,7 +91,8 @@
             // bookmarksToolStripMenuItem
             // 
             this.bookmarksToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addNewBookmarkToolStripMenuItem});
+            this.addNewBookmarkToolStripMenuItem,
+            this.clearBookmarksToolStripMenuItem});
             this.bookmarksToolStripMenuItem.Name = "bookmarksToolStripMenuItem";
             this.bookmarksToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.bookmarksToolStripMenuItem.Text = "Bookmarks";
@@ -101,6 +103,13 @@
             this.addNewBookmarkToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addNewBookmarkToolStripMenuItem.Text = "Add New Bookmark";
             this.addNewBookmarkToolStripMenuItem.Click += new System.EventHandler(this.addNewBookmarkToolStripMenuItem_Click);
+            // 
+            // clearBookmarksToolStripMenuItem
+            // 
+            this.clearBookmarksToolStripMenuItem.Name = "clearBookmarksToolStripMenuItem";
+            this.clearBookmarksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clearBookmarksToolStripMenuItem.Text = "Clear Bookmarks";
+            this.clearBookmarksToolStripMenuItem.Click += new System.EventHandler(this.clearBookmarksToolStripMenuItem_Click);
             // 
             // hashSettingsToolStripMenuItem
             // 
@@ -114,9 +123,15 @@
             // removeHashToolStripMenuItem
             // 
             this.removeHashToolStripMenuItem.Name = "removeHashToolStripMenuItem";
-            this.removeHashToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.removeHashToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.removeHashToolStripMenuItem.Text = "Remove Hash";
             this.removeHashToolStripMenuItem.Click += new System.EventHandler(this.removeHashToolStripMenuItem_Click);
+            // 
+            // addHashToolStripMenuItem
+            // 
+            this.addHashToolStripMenuItem.Name = "addHashToolStripMenuItem";
+            this.addHashToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.addHashToolStripMenuItem.Text = "Add Hash";
             // 
             // clearListToolStripMenuItem
             // 
@@ -182,12 +197,6 @@
             this.listBoxHistory.Size = new System.Drawing.Size(1344, 134);
             this.listBoxHistory.TabIndex = 7;
             // 
-            // addHashToolStripMenuItem
-            // 
-            this.addHashToolStripMenuItem.Name = "addHashToolStripMenuItem";
-            this.addHashToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.addHashToolStripMenuItem.Text = "Add Hash";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -231,6 +240,7 @@
         private System.Windows.Forms.ToolStripMenuItem clearListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addHashToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearBookmarksToolStripMenuItem;
     }
 }
 

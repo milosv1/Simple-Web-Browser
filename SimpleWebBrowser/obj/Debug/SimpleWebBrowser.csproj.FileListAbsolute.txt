@@ -8,3 +8,13 @@ C:\Users\Admin\source\repos\SimpleWebBrowser\SimpleWebBrowser\obj\Debug\SimpleWe
 C:\Users\Admin\source\repos\SimpleWebBrowser\SimpleWebBrowser\obj\Debug\SimpleWebBrowser.exe
 C:\Users\Admin\source\repos\SimpleWebBrowser\SimpleWebBrowser\obj\Debug\SimpleWebBrowser.pdb
 C:\Users\Admin\source\repos\SimpleWebBrowser\SimpleWebBrowser\obj\Debug\SimpleWebBrowser.csprojAssemblyReference.cache
+C:\Users\Admin\Source\Repos\milosv1\Simple-Web-Browser\SimpleWebBrowser\bin\Debug\SimpleWebBrowser.exe.config
+C:\Users\Admin\Source\Repos\milosv1\Simple-Web-Browser\SimpleWebBrowser\bin\Debug\SimpleWebBrowser.exe
+C:\Users\Admin\Source\Repos\milosv1\Simple-Web-Browser\SimpleWebBrowser\bin\Debug\SimpleWebBrowser.pdb
+C:\Users\Admin\Source\Repos\milosv1\Simple-Web-Browser\SimpleWebBrowser\obj\Debug\SimpleWebBrowser.csprojAssemblyReference.cache
+C:\Users\Admin\Source\Repos\milosv1\Simple-Web-Browser\SimpleWebBrowser\obj\Debug\SimpleWebBrowser.Form1.resources
+C:\Users\Admin\Source\Repos\milosv1\Simple-Web-Browser\SimpleWebBrowser\obj\Debug\SimpleWebBrowser.Properties.Resources.resources
+C:\Users\Admin\Source\Repos\milosv1\Simple-Web-Browser\SimpleWebBrowser\obj\Debug\SimpleWebBrowser.csproj.GenerateResource.cache
+C:\Users\Admin\Source\Repos\milosv1\Simple-Web-Browser\SimpleWebBrowser\obj\Debug\SimpleWebBrowser.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\milosv1\Simple-Web-Browser\SimpleWebBrowser\obj\Debug\SimpleWebBrowser.exe
+C:\Users\Admin\Source\Repos\milosv1\Simple-Web-Browser\SimpleWebBrowser\obj\Debug\SimpleWebBrowser.pdb

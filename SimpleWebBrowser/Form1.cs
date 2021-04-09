@@ -199,6 +199,13 @@ namespace SimpleWebBrowser
             }
         }
 
+        private void clearBookmarksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Show this message.
+            MessageBox.Show("Bookmarks cleared!");
+            //Clear items from bookmarks.
+            addNewBookmarkToolStripMenuItem.DropDownItems.Clear();
+        }
     }
 
        
