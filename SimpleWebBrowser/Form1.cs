@@ -59,10 +59,7 @@ namespace SimpleWebBrowser
                 listBoxHistory.Items.Add(searchBar.Text.GetHashCode() + " " + isHashed + " " + DateTime.Now);
                 Debug.WriteLine("Recently Added: " + searchBar.Text + " -- " + "Hashed Code: " + searchBar.Text.GetHashCode()); // should print to console - whatever was added by user.
             }
-
-         
-
-
+            
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -120,20 +117,6 @@ namespace SimpleWebBrowser
 
         }
 
-        //private void clearListButton_Click(object sender, EventArgs e)
-        //{
-          //  if (listBoxHistory.Items.Count > 0) //clear search history.
-          //  {
-            //    listBoxHistory.Items.Clear(); //clear listed items in History Sect.
-             //   MessageBox.Show("Items Cleared");
-           // }
-            //else if (listBoxHistory.Items.Count <= 0) //if nothing inside history, you cant clear.
-            //{
-              //  MessageBox.Show("There must be something to clear");
-            //}
-
-        //}
-
         private void addNewBookmarkToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -171,10 +154,7 @@ namespace SimpleWebBrowser
             if (string.IsNullOrEmpty(searchBar.Text) == false) //if it it has something in it
             {
 
-
-
                 //testToolStripMenuItem.DropDownItems.Add(searchBar.Text);
-
 
             }
 
@@ -187,6 +167,7 @@ namespace SimpleWebBrowser
             if (listBoxHistory.Items.Count > 0)
             {
                 listBoxHistory.Items.Clear();
+                Debug.WriteLine(searchBar.Text + " was removed.");
             }
             else
             {
