@@ -35,10 +35,7 @@
             this.bookmarksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewBookmarkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearBookmarksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hashSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.removeHashToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewHistoryToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.searchBar = new System.Windows.Forms.TextBox();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -47,6 +44,8 @@
             this.listBoxHistory = new System.Windows.Forms.ListBox();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.viewHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.historyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -56,8 +55,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.bookmarksToolStripMenuItem,
-            this.hashSettingsToolStripMenuItem,
-            this.clearListToolStripMenuItem});
+            this.historyToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1368, 24);
@@ -110,35 +108,10 @@
             this.clearBookmarksToolStripMenuItem.Text = "Clear Bookmarks";
             this.clearBookmarksToolStripMenuItem.Click += new System.EventHandler(this.clearBookmarksToolStripMenuItem_Click);
             // 
-            // hashSettingsToolStripMenuItem
+            // viewHistoryToolStripMenuItem1
             // 
-            this.hashSettingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.removeHashToolStripMenuItem});
-            this.hashSettingsToolStripMenuItem.Name = "hashSettingsToolStripMenuItem";
-            this.hashSettingsToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
-            this.hashSettingsToolStripMenuItem.Text = "Hash Settings";
-            // 
-            // removeHashToolStripMenuItem
-            // 
-            this.removeHashToolStripMenuItem.Name = "removeHashToolStripMenuItem";
-            this.removeHashToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.removeHashToolStripMenuItem.Text = "Remove Hash";
-            this.removeHashToolStripMenuItem.Click += new System.EventHandler(this.removeHashToolStripMenuItem_Click);
-            // 
-            // clearListToolStripMenuItem
-            // 
-            this.clearListToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clearToolStripMenuItem});
-            this.clearListToolStripMenuItem.Name = "clearListToolStripMenuItem";
-            this.clearListToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-            this.clearListToolStripMenuItem.Text = "Clear List";
-            // 
-            // clearToolStripMenuItem
-            // 
-            this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
-            this.clearToolStripMenuItem.Size = new System.Drawing.Size(101, 22);
-            this.clearToolStripMenuItem.Text = "Clear";
-            this.clearToolStripMenuItem.Click += new System.EventHandler(this.clearToolStripMenuItem_Click);
+            this.viewHistoryToolStripMenuItem1.Name = "viewHistoryToolStripMenuItem1";
+            this.viewHistoryToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             // 
             // searchBar
             // 
@@ -189,6 +162,18 @@
             this.listBoxHistory.Size = new System.Drawing.Size(1344, 134);
             this.listBoxHistory.TabIndex = 7;
             // 
+            // viewHistoryToolStripMenuItem
+            // 
+            this.viewHistoryToolStripMenuItem.Name = "viewHistoryToolStripMenuItem";
+            this.viewHistoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewHistoryToolStripMenuItem.Text = "View History";
+            // 
+            // historyToolStripMenuItem
+            // 
+            this.historyToolStripMenuItem.Name = "historyToolStripMenuItem";
+            this.historyToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.historyToolStripMenuItem.Text = "History";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -224,14 +209,13 @@
         private System.Windows.Forms.ToolStripMenuItem newPageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bookmarksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewBookmarkToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hashSettingsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem removeHashToolStripMenuItem;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         public System.Windows.Forms.ListBox listBoxHistory;
-        private System.Windows.Forms.ToolStripMenuItem clearListToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clearToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearBookmarksToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewHistoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewHistoryToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem historyToolStripMenuItem;
     }
 }
 

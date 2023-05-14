@@ -15,7 +15,6 @@ namespace SimpleWebBrowser
 
     public partial class Form1 : Form
     {
-        public SpeechSynthesizer synth; //this is my assistant, he speaks when i ask him to. :Dff\d
 
         public Form1()
         {
@@ -43,21 +42,15 @@ namespace SimpleWebBrowser
             searchBar.Enabled = false;
             webBrowser1.Navigate(searchBar.Text);
 
-
-
             if (string.IsNullOrEmpty(searchBar.Text) == true) //is it empty? 
             {
                 MessageBox.Show("Field cannot be empty."); // if it is empty, return this message.
             } 
             else if (searchBar.Text.Length != ' ')
             {
-                //say Not hashed or HASHED.
-                string isHashed = searchBar.Text.GetHashCode().ToString();
-                isHashed = "- Hashed";
-
                 webBrowser1.Navigate(searchBar.Text); //search.
-                listBoxHistory.Items.Add(searchBar.Text.GetHashCode() + " " + isHashed + " " + DateTime.Now);
-                Debug.WriteLine("Recently Added: " + searchBar.Text + " -- " + "Hashed Code: " + searchBar.Text.GetHashCode()); // should print to console - whatever was added by user.
+                Debug.WriteLine("searchBar.Text"); // should print to console - whatever was added by user.
+                historyToolStripMenuItem.DropDownItems.Add(searchBar.Text);
             }
             
         }
@@ -98,14 +91,6 @@ namespace SimpleWebBrowser
             form1.Show();
         }
 
-        private void openNewTabWithKeys(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)ConsoleKey.Tab && e.KeyChar == (char)ConsoleKey.N)
-            {
-                MessageBox.Show("Tab an N pressed");
-            }
-           
-        }
         private void openListBoxHistory_Click(object sender, EventArgs e, KeyEventArgs k)
         {
 
@@ -122,44 +107,16 @@ namespace SimpleWebBrowser
 
             if (addNewBookmarkToolStripMenuItem.Pressed)
             {
-                MessageBox.Show(searchBar.Text + " was added to bookmarks!");
-                addNewBookmarkToolStripMenuItem.DropDownItems.Add(searchBar.Text);
-            }
-        }
-
-
-        private void removeHashToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (removeHashToolStripMenuItem.Pressed)
-            {
-                if (searchBar.Text.Length > 0) {
-                    listBoxHistory.Refresh(); // refresh collection
-                    listBoxHistory.Items.Clear(); //clear collection
-                    listBoxHistory.Items.Add(searchBar.Text + " " + DateTime.Now); //add search item not hashed.
-
+                if (searchBar.Text == "https://" || searchBar.Text == "http://")
+                {
+                    Debug.WriteLine("Needs to be a valid URL");
                 }
                 else
                 {
-                    MessageBox.Show("there needs to be something to remove.");
+                    addNewBookmarkToolStripMenuItem.DropDownItems.Add(searchBar.Text);
                 }
-
             }
-            
         }
-
-
-        private void testToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            if (string.IsNullOrEmpty(searchBar.Text) == false) //if it it has something in it
-            {
-
-                //testToolStripMenuItem.DropDownItems.Add(searchBar.Text);
-
-            }
-
-        }
-
 
         private void clearToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -167,12 +124,11 @@ namespace SimpleWebBrowser
             if (listBoxHistory.Items.Count > 0)
             {
                 listBoxHistory.Items.Clear();
-                Debug.WriteLine(searchBar.Text + " was removed.");
+                Debug.WriteLine(searchBar.Text + " has been deleted.");
             }
             else
             {
-                MessageBox.Show("There needs to be something to Delete");
-                MessageBox.Show("Add a link to remove");
+                MessageBox.Show("No items in list.");
             }
         }
 
@@ -182,6 +138,12 @@ namespace SimpleWebBrowser
             MessageBox.Show("Bookmarks cleared!");
             //Clear items from bookmarks.
             addNewBookmarkToolStripMenuItem.DropDownItems.Clear();
+        }
+
+        private void clearAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Clear all items from list
+            
         }
 
     }
