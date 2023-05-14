@@ -10,6 +10,9 @@ using System.Windows.Forms;
 using System.Speech.Synthesis;
 using System.Diagnostics; //we need this to find out performance of the browser.
 using System.Security.Cryptography; //Security purposes/
+using System.Net.Http;
+using Newtonsoft.Json.Linq;
+
 namespace SimpleWebBrowser
 {
 
@@ -140,12 +143,24 @@ namespace SimpleWebBrowser
             addNewBookmarkToolStripMenuItem.DropDownItems.Clear();
         }
 
-        private void clearAllToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void searchSymbolToolStripMenuItem_ClickAsync(object sender, EventArgs e)
         {
-            //Clear all items from list
-            
-        }
+            //Try and create a small stock tracking component into the web browser.
+            //search symbol using searchBar.Text ;)
+            var symbol = searchBar.Text;
+            var apiKey = "replace with your API key."; // replace with your Alpha Vantage API key
 
+            var url = $"https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol={searchBar.Text}&apikey={apiKey}";
+
+            using (var httpClient = new HttpClient())
+            using (var response = await httpClient.GetAsync(url))
+            using (var content = response.Content)
+            {
+                var json = await content.ReadAsStringAsync();
+                //listBoxHistory.Items.Add(json);
+                MessageBox.Show(json);
+            }
+        }
     }
 
        

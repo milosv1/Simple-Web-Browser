@@ -18,3 +18,6 @@ C:\Users\Admin\Source\Repos\milosv1\Simple-Web-Browser\SimpleWebBrowser\obj\Debu
 C:\Users\Admin\Source\Repos\milosv1\Simple-Web-Browser\SimpleWebBrowser\obj\Debug\SimpleWebBrowser.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Source\Repos\milosv1\Simple-Web-Browser\SimpleWebBrowser\obj\Debug\SimpleWebBrowser.exe
 C:\Users\Admin\Source\Repos\milosv1\Simple-Web-Browser\SimpleWebBrowser\obj\Debug\SimpleWebBrowser.pdb
+C:\Users\Admin\Source\Repos\milosv1\Simple-Web-Browser\SimpleWebBrowser\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\Source\Repos\milosv1\Simple-Web-Browser\SimpleWebBrowser\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\Source\Repos\milosv1\Simple-Web-Browser\SimpleWebBrowser\obj\Debug\SimpleWebBrowser.csproj.CopyComplete

@@ -46,6 +46,8 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.viewHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.historyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stockTrackerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchSymbolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +57,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.bookmarksToolStripMenuItem,
-            this.historyToolStripMenuItem});
+            this.historyToolStripMenuItem,
+            this.stockTrackerToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1368, 24);
@@ -174,6 +177,21 @@
             this.historyToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.historyToolStripMenuItem.Text = "History";
             // 
+            // stockTrackerToolStripMenuItem
+            // 
+            this.stockTrackerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.searchSymbolToolStripMenuItem});
+            this.stockTrackerToolStripMenuItem.Name = "stockTrackerToolStripMenuItem";
+            this.stockTrackerToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+            this.stockTrackerToolStripMenuItem.Text = "Stock Tracker";
+            // 
+            // searchSymbolToolStripMenuItem
+            // 
+            this.searchSymbolToolStripMenuItem.Name = "searchSymbolToolStripMenuItem";
+            this.searchSymbolToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.searchSymbolToolStripMenuItem.Text = "Search Symbol";
+            this.searchSymbolToolStripMenuItem.Click += new System.EventHandler(this.searchSymbolToolStripMenuItem_ClickAsync);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -216,6 +234,8 @@
         private System.Windows.Forms.ToolStripMenuItem viewHistoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewHistoryToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem historyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stockTrackerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchSymbolToolStripMenuItem;
     }
 }
 
